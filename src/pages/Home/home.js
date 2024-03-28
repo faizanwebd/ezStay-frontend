@@ -5,7 +5,7 @@ import {
   Categories,
   SearchStayWithDate,
   Filter,
-  AuthModal
+  AuthModal,
 } from "../../components";
 import axios from "axios";
 import InfiniteScroll from "react-infinite-scroll-component";
@@ -37,7 +37,7 @@ export const Home = () => {
     isCancelable,
   } = useFilter();
 
-  const {isAuthModalOpen} = useAuth();
+  const { isAuthModalOpen } = useAuth();
 
   useEffect(() => {
     (async () => {
@@ -90,7 +90,7 @@ export const Home = () => {
   const filterHotelsByCancelation = getHotelsByCancelation(
     filterHotelsByRatings,
     isCancelable
-  );  
+  );
 
   return (
     <div className="relative">
@@ -104,7 +104,14 @@ export const Home = () => {
           loader={
             hotels.length > 0 && <h3 className="alert-text">Loading...</h3>
           }
-          endMessage={<p className="alert-text">You have seen it all !</p>}
+          endMessage={
+            <>
+              <p className="alert-text">You have seen it all !
+                Built with ❤️ by{" "}
+                <a href="https://codexdebayan.blogspot.com" style={{textDecoration: 'none'}}>Codex Debayan</a>
+              </p>
+            </>
+          }
         >
           <main className="main d-flex align-center wrap gap-larger">
             {filterHotelsByCancelation &&
