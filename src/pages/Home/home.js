@@ -108,7 +108,7 @@ export const Home = () => {
             <>
               <p className="alert-text">You have seen it all !
                 Built with ❤️ by{" "}
-                <a href="https://codexdebayan.blogspot.com" style={{textDecoration: 'none'}}>Codex Debayan</a>
+                <a href="https://codexdebayan.blogspot.com" target="_blank" style={{textDecoration: 'none'}}>Codex Debayan</a>
               </p>
             </>
           }
