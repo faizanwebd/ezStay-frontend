@@ -23,7 +23,7 @@ export const Navbar = () => {
 
       <h1 className="heading-1">
         <a className="link" href="/">
-          Nivas
+          ezStay
         </a>
       </h1>
 
