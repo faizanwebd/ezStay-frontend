@@ -43,7 +43,7 @@ export const PriceRange = () => {
       <span className="filter-label">Price Range</span>
       <Box>
         <Slider
-          sx={{ color: "#05882e" }}
+          sx={{ color: "#caa169" }}
           getAriaLabel={() => "Minimum Difference"}
           value={priceRange}
           valueLabelDisplay="on"
